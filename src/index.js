@@ -1,21 +1,4 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-// import Swiper from 'swiper';
-
-// import Swiper, { Navigation, Pagination } from 'swiper';
-// // import Swiper and modules styles
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-//   const swiper = new Swiper(...);
-
-const swiper = new Swiper('.swiper', {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-});
 
 const form = document.querySelector('.form-email');
 const input = document.querySelector('.form-input');
@@ -33,3 +16,12 @@ function onSubmit(e) {
     form.reset();
   }
 }
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
