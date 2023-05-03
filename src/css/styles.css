@@ -80,7 +80,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
+/* -----------------------------------------------------HEADER------------------------------------------------------------ */
 .tagline-box {
   background-color: var(--brand-color-blue);
   width: 100%;
@@ -107,7 +107,7 @@ body {
 .navigation-link:focus {
   transform: scale(1.25);
 }
-
+/* -----------------------------------------------------HERO------------------------------------------------------------ */
 .hero {
   display: flex;
   gap: 138px;
@@ -180,7 +180,7 @@ body {
 .hero-img {
   margin-top: 30px;
 }
-
+/* -----------------------------------------------------ADVANTAGES------------------------------------------------------------ */
 .advantages,
 .app {
   background-color: var(--dark-background);
@@ -211,7 +211,7 @@ body {
   margin-top: 102px;
   width: 600px;
 }
-
+/* -----------------------------------------------------STEPS------------------------------------------------------------ */
 .first-step,
 .second-step {
   padding: 58px 120px;
@@ -285,8 +285,6 @@ body {
   position: relative;
   top: 48px;
 }
-.card-img {
-}
 .step-button {
   margin-top: 40px;
   padding: 15px 35px;
@@ -309,6 +307,7 @@ body {
   font-size: 20px;
   line-height: 1.6;
 }
+/* -----------------------------------------------------APP----------------------------------------------------------- */
 .app-box {
   display: flex;
   gap: 168px;
@@ -363,6 +362,7 @@ body {
   color: #808080;
   margin-bottom: 0.8;
 }
+/* -----------------------------------------------------FEEDBACK------------------------------------------------------------ */
 .feedback {
   padding: 58px 44px;
 }
@@ -404,11 +404,10 @@ body {
   opacity: 1;
   background-color: var(--brand-color-blue);
 }
-
 .swiper-pagination-bullet-active {
   background-color: var(--dark-background);
 }
-
+/* -----------------------------------------------------CONTACTS------------------------------------------------------------ */
 .contacts {
   background-color: var(--brand-color-pink);
   padding: 58px 44px;
@@ -448,12 +447,11 @@ body {
   background-color: var(--dark-background);
   color: var(--light-text);
 }
-
 .contacts-text {
   font-size: 20px;
   line-height: 1.6;
 }
-
+/* -----------------------------------------------------FOOTER----------------------------------------------------------- */
 .footer {
   background-color: var(--dark-background);
   padding: 58px 44px;
@@ -508,7 +506,7 @@ body {
 .footer-sl-link:focus {
   fill: var(--brand-color-pink);
 }
-
+/* -----------------------------------------------------THRIVE/CARD------------------------------------------------------------ */
 .thrive,
 .card {
   padding: 58px 44px;
