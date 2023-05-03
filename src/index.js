@@ -17,11 +17,18 @@ function onSubmit(e) {
   }
 }
 
-const swiper = new Swiper('.swiper', {
+const swiperFeedback = new Swiper('.swiper-feedback', {
   slidesPerView: 3,
   spaceBetween: 30,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+  },
+});
+
+const swiperHero = new Swiper('.swiper-hero', {
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
   },
 });
