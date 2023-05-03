@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Credit App</title>
+    <title>Empower</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -24,16 +25,19 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="">About Us</a>
+              <a class="navigation-link" href="#about">About Us</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="">Getting started</a>
+              <a class="navigation-link" href="#first-step">Getting started</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="">Customer Stories</a>
+              <a class="navigation-link" href="#app">Our App</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="">Contacts</a>
+              <a class="navigation-link" href="#feedback">Customer Stories</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -41,7 +45,7 @@
     </header>
 
     <main>
-      <section class="hero container">
+      <section class="hero container" id="about">
         <div class="hero-text-box">
           <h1 class="hero-title">Your journey to better credit starts here</h1>
           <p class="hero-subtitle">
@@ -91,7 +95,7 @@
           </div>
         </div>
       </section>
-      <section class="first-step container">
+      <section class="first-step container" id="first-step">
         <h2 class="visually-hidden">Getting started</h2>
         <h3 class="step-title">Step 1</h3>
         <p class="step-subtitle">Choose your product</p>
@@ -102,15 +106,15 @@
             alt="mobile application"
             width="304"
           />
-          <div class="first-step-text-box">
-            <p class="app-subtitle">Get started with</p>
-            <h4 class="app-title">Empower Cash Advance</h4>
-            <ul class="app-list">
-              <li class="app-item">Receive up to $250 today</li>
-              <li class="app-item">
+          <div class="step-text-box">
+            <p class="step-text-subtitle">Get started with</p>
+            <h4 class="step-text-title">Empower Cash Advance</h4>
+            <ul class="step-text-list">
+              <li class="step-text-item">Receive up to $250 today</li>
+              <li class="step-text-item">
                 No interest, no late fees, no credit checks
               </li>
-              <li class="app-item">Instant delivery</li>
+              <li class="step-text-item">Instant delivery</li>
             </ul>
           </div>
         </div>
@@ -122,30 +126,291 @@
             alt="mobile application upgraded"
             width="304"
           />
-          <div class="first-step-text-box">
-            <p class="app-subtitle">THEN upgrade to</p>
-            <h4 class="app-title">Empower Thrive</h4>
-            <ul class="app-list">
-              <li class="app-item">
+          <div class="step-text-box">
+            <p class="step-text-subtitle">THEN upgrade to</p>
+            <h4 class="step-text-title">Empower Thrive</h4>
+            <ul class="step-text-list">
+              <li class="step-text-item">
                 Start with a $200 line of credit and grow to $1,000 with every
                 on-time payment
               </li>
-              <li class="app-item">
+              <li class="step-text-item">
                 Enjoy 0% APR <br />
-                <span class="app-note"
+                <span class="step-text-note"
                   >when you pay your balance on your next paycheck date,
                   otherwise 35.99% APR</span
                 >
               </li>
-              <li class="app-item">Build credit over time</li>
+              <li class="step-text-item">Build credit over time</li>
             </ul>
-            <button class="first-step-button" type="button">Read more</button>
+            <form action="./thrive.html" method="get"><button class="step-button" type="submit">Read more</button></form>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="second-step container">
+        <h2 class="visually-hidden">Choise of card</h2>
+        <h3 class="step-title">Step 2</h3>
+        <p class="step-subtitle">Choose where to deposit your cash</p>
+        <div class="second-step-box">
+          <img
+            class="card-img"
+            src="./images/card.png"
+            alt="differnt credit cards"
+            width="336"
+          />
+          <div class="step-text-box">
+            <h4 class="step-text-title">Empower Card</h4>
+            <p class="step-text-subtitle">
+              Open a debit card account through Empower with no overdraft fees
+            </p>
+            <ul class="step-text-list">
+              <li class="step-text-item">
+                Get free instant delivery of your Empower Cash Advance
+              </li>
+              <li class="step-text-item">Get paid up to 2 days faster</li>
+              <li class="step-text-item">Score cashback up to 10%</li>
+            </ul>
+            <form action="./card.html" method="get"><button class="step-button" type="submit">Read more</button></form>
+            
+          </div>
+        </div>
+
+        <div class="second-step-box last-box">
+          <img
+            class="account-img"
+            src="./images/account.png"
+            alt="graphic of your account"
+            width="336"
+          />
+          <div class="step-text-box">
+            <h4 class="step-text-title">External Checking Account</h4>
+            <p class="account-text">
+              Keep your current bank and have your Empower Cash Advance or
+              Empower Thrive funds deposited to your primary bank account.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="app" id="app">
+        <div class="container">
+          <h2 class="visually-hidden">About the app</h2>
+          <div class="app-box">
+            <img
+              class="app-img"
+              srcset="./images/app.jpg 1x, ./images/app@2x.jpg 2x"
+              src="./images/app.jpg"
+              alt="Man with a cash"
+              width="445"
+              height="454"
+            />
+            <div class="app-text-box">
+              <ul class="app-list">
+                <li class="app-item">
+                  <h3 class="app-subtitle">APPLE</h3>
+                  <p class="app-text">New Apps We Love</p>
+                </li>
+                <li class="app-item">
+                  <h3 class="app-subtitle">TIME</h3>
+                  <p class="app-text">Best Apps of the Year</p>
+                </li>
+                <li class="app-item">
+                  <h3 class="app-subtitle">REAL SIMPLE</h3>
+                  <p class="app-text">Smart Money Award</p>
+                </li>
+              </ul>
+              <div class="applications-box">
+                <div class="applications-box-item">
+                  <a href="https://www.apple.com/ua/app-store/" target="_blank"
+                    rel="noopener noreferrer nofollow">
+                    <img
+                      class="application-image"
+                      src="./images/app-store-img.png"
+                      alt="app-store"
+                      width="83"
+                    />
+                    <p class="rate">4.8</p>
+                    <p class="reviews">55,000 reviews</p>
+                  </a>
+                </div>
+                <div class="applications-box-item">
+                  <a href="https://play.google.com/store/apps?hl=ru&gl=US&pli=1" target="_blank"
+                    rel="noopener noreferrer nofollow">
+                    <img
+                      class="application-image"
+                      src="./images/google-play-img.png"
+                      alt="google-play"
+                      width="83"
+                    />
+                    <p class="rate">4.7</p>
+                    <p class="reviews">52,000 reviews</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedback" id="feedback">
+        <div class="container">
+          <h2 class="visually-hidden">feedbacks</h2>
+          <h3 class="feedback-subtitle">
+            Giving credit where <br />
+            credit’s due
+          </h3>
+          
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="feedback-item swiper-slide">
+                <div class="feedback-text-box">
+                  <p class="feedback-text">
+                  "Empower Thrive has been amazing since day one."
+                </p>
+                <p class="feedback-name">Roberto V.</p>
+                </div>
+              </div>
+
+              <div class="feedback-item swiper-slide">
+                <div class="feedback-text-box">
+                  <p class="feedback-text">
+                  "Empower Thrive got me through a tough spot."
+                </p>
+                <p class="feedback-name">Demarcus O.</p>
+                </div>
+              </div>
+
+              <div class="feedback-item swiper-slide">
+                <div class="feedback-text-box">
+                  <p class="feedback-text">
+                  "Empower Thrive gave me the money I needed when I needed it.
+                  Quick and easy."
+                </p>
+                <p class="feedback-name">Sanika S.</p>
+                </div>
+              </div>
+
+              <div class="feedback-item swiper-slide">
+                <div class="feedback-text-box">
+                  <p class="feedback-text">
+                  "Fast, easy, with no fuss"
+                </p>
+                <p class="feedback-name">Jaime A.</p>
+                </div>
+              </div>
+
+              <div class="feedback-item swiper-slide">
+                <div class="feedback-text-box">
+                  <p class="feedback-text">
+                  "Love this. An app, that actually does what's advertised"
+                </p>
+                <p class="feedback-name">Shannon O.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="visually-hidden">contacts</h2>
+          <div class="contacts-box">
+            <div class="contacts-box-text">
+              <h3 class="contacts-subtitle">
+              We believe credit should be more fair
+            </h3>
+            <address class="contacts-address">
+                    <h4 class="contacts-address-subtitle">Our location:</h4>
+                    <form action="https://goo.gl/maps/3Us1wVYzz1D549Co8" target="_blank"
+                    rel="noopener noreferrer nofollow" method="get"><button class="contacts-address-button" type="submit">Ukraine, <br> Kharkiv, <br> Konstytutsii Sq., <br> 30, 61000</button></form>
+                    <!-- <a class="contacts-address-link" href="https://goo.gl/maps/3Us1wVYzz1D549Co8" target="_blank"
+                    rel="noopener noreferrer nofollow">Ukraine, <br> Kharkiv, <br> Konstytutsii Sq., <br> 30, 61000</a> -->
+                  <ul class="contacts-worktime">
+                      <li class="contacts-worktime-item">
+                          <p class="contacts-text">Monday - Friday<br>
+                          06:00 AM - 10:00 PM</p>
+                      </li>
+                      <li class="contacts-worktime-item">
+                          <p class="contacts-text">Saturday - Sunday<br>
+                          08:00 AM - 16:00 PM</p>
+                      </li>
+                  </ul>
+            </address>
+            </div>
+            
+            <img
+              class="conclusion-img"
+              srcset="./images/conclusion.jpg 1x, ./images/conclusion@2x.jpg 2x"
+              src="./images/conclusion.jpg"
+              alt="Man with a cash"
+              width="468"
+              height="646"
+            />
           </div>
         </div>
       </section>
     </main>
 
-    <footer></footer>
-    <!-- <script src="index.js" type="module"></script> -->
+    <footer class="footer">
+      <div class="container footer-box">
+        <p class="footer-note">
+          ® The Empower name and logos are trademarks and service marks
+          (collectively, the “Empower Trademarks”) owned by Empower Finance,
+          Inc. You do not acquire a license or any ownership rights to any
+          trademarks, service marks, or trade names through your access or use
+          of the Empower app or platform product or service.
+        </p>
+        <div class="footer-links">
+          <ul class="footer-navigation-list">
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="#about">About Us</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="#first-step">Getting started</a>
+          </li>
+          <li class="footer-navigation-item">
+              <a class="footer-navigation-link" href="#app">Our App</a>
+            </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="#feedback">Customer Stories</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+         <ul class="footer-sl-list">
+          <li class="footer-sl-item">
+            <a class="footer-sl-link" href="https://www.facebook.com/" target="_blank"
+                    rel="noopener noreferrer nofollow">
+               <svg class="footer-sl-icon">
+                      <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+            </a>
+            
+          </li>
+          <li class="footer-sl-item">
+            <a class="footer-sl-link" href="https://www.instagram.com/" target="_blank"
+                    rel="noopener noreferrer nofollow">
+              <svg class="footer-sl-icon">
+                      <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+            </a>
+          </li>
+          <li class="footer-sl-item">
+            <a class="footer-sl-link" href="https://twitter.com/" target="_blank"
+                    rel="noopener noreferrer nofollow">
+              <svg class="footer-sl-icon">
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+            </a>
+          </li>
+        </div>
+        
+      </div>
+    </footer>
+    <script src="index.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </body>
 </html>
