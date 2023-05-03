@@ -16,14 +16,26 @@
   </head>
   <body>
     <header>
-      <div class="tagline-box">
-        <p class="tagline">
-          Hear first hand how our product is helping those who need it the most
-        </p>
+      <div class="tagline">
+        <div class="container">
+          <div class="tagline-box">
+              <p class="tagline-text">
+                Hear first hand how our product is helping those who need it the most
+              </p>
+              <button type="button" class="mobile-menu-open js-open-menu">
+                <svg class="burger-icon">
+                  <use href="./images/additional-icons.svg#icon-menu"></use>
+                </svg>
+              </button>
+          </div>
+          
+        </div>
+        
       </div>
-      <div class="container">
-        <nav class="navigation">
-          <ul class="navigation-list">
+        
+          <div class="container">
+            <nav class="navigation">
+              <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="#about">About Us</a>
             </li>
@@ -40,8 +52,57 @@
               <a class="navigation-link" href="#contacts">Contacts</a>
             </li>
           </ul>
-        </nav>
-      </div>
+            </nav>
+          </div>
+
+           <div class="mobile-menu mobile-menu-container js-menu-container">
+              <button type="button" class="mobile-menu-close js-close-menu">
+                <svg class="close-icon">
+                  <use href="./images/additional-icons.svg#icon-cross"></use>
+                </svg>
+              </button>
+              <ul class="mobile-navigation">
+                <li class="mobile-navigation-item">
+                  <a class="mobile-navigation-link" href="index.html">About Us</a
+                  >
+                </li>
+                <li class="mobile-navigation-item">
+                  <a class="mobile-navigation-link" href="thrive.html">Thrive</a
+                  >
+                </li>
+                <li class="mobile-navigation-item">
+                  <a class="mobile-navigation-link" href="card.html">Card</a>
+                </li>
+              </ul>
+
+              <ul class="mobile-sl-list">
+                <li class="mobile-sl-item">
+                  <a class="mobile-sl-link" href="https://www.facebook.com/" target="_blank"
+                          rel="noopener noreferrer nofollow">
+                    <svg class="mobile-sl-icon">
+                            <use href="./images/icons.svg#facebook"></use>
+                          </svg>
+                  </a>
+                  
+                </li>
+                <li class="mobile-sl-item">
+                  <a class="mobile-sl-link" href="https://www.instagram.com/" target="_blank"
+                          rel="noopener noreferrer nofollow">
+                    <svg class="mobile-sl-icon">
+                            <use href="./images/icons.svg#instagram"></use>
+                          </svg>
+                  </a>
+                </li>
+                <li class="mobile-sl-item">
+                  <a class="mobile-sl-link" href="https://twitter.com/" target="_blank"
+                          rel="noopener noreferrer nofollow">
+                    <svg class="mobile-sl-icon">
+                            <use href="./images/icons.svg#twitter"></use>
+                          </svg>
+                  </a>
+                </li>
+              </ul>
+           </div>
     </header>
 
     <main>
@@ -414,6 +475,7 @@
       </div>
     </footer>
     <script src="index.js" type="module"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </body>
 </html>
