@@ -18,8 +18,6 @@ function onSubmit(e) {
 }
 
 const swiperFeedback = new Swiper('.swiper-feedback', {
-  slidesPerView: 3,
-  spaceBetween: 30,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,

@@ -273,6 +273,10 @@ body {
   line-height: 1.14;
   margin-top: 18px;
 }
+.advantages-img {
+  margin-left: auto;
+  margin-right: auto;
+}
 /* -----------------------------------------------------STEPS-MOBILE----------------------------------------------------------- */
 .first-step,
 .second-step {
@@ -369,6 +373,10 @@ body {
   font-size: 16px;
   line-height: 1.2;
 }
+.account-img {
+  margin-left: auto;
+  margin-right: auto;
+}
 /* -----------------------------------------------------APP-MOBILE---------------------------------------------------------- */
 .app-text-box {
   margin-top: 16px;
@@ -388,9 +396,14 @@ body {
   font-size: 12px;
   line-height: 1.5;
 }
+.app-img {
+  margin-left: auto;
+  margin-right: auto;
+}
 .applications-box {
   display: flex;
   gap: 20px;
+  justify-content: center;
 }
 .applications-box-item {
   background-color: var(--main-background);
@@ -430,7 +443,7 @@ body {
 }
 .feedback-item {
   position: relative;
-  width: 65px;
+  width: 260px;
   height: 220px;
   background-color: #efefef;
   border-radius: 12px;
@@ -441,15 +454,15 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 65px;
+  width: 240px;
 }
 .feedback-text {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.14;
   margin-bottom: 16px;
 }
 .feedback-name {
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.5;
 }
 .swiper-pagination-bullet {
@@ -503,25 +516,101 @@ body {
 .conclusion-img {
   display: none;
 }
+/* -----------------------------------------------------FOOTER-MOBILE---------------------------------------------------------- */
+.footer {
+  background-color: var(--dark-background);
+  padding: 36px 10px;
+  color: var(--light-text);
+  text-align: center;
+}
+.footer-note {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #b3b3b3;
+  margin-bottom: 16px;
+}
+.footer-links {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.footer-navigation-list {
+  display: flex;
+  column-gap: 36px;
+  row-gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+.footer-navigation-link {
+  transition: color var(--timing-function) var(--animation-duration);
+}
+.footer-navigation-link:hover,
+.footer-navigation-link:focus {
+  color: var(--brand-color-blue);
+}
+.footer-sl-list {
+  display: flex;
+  gap: 36px;
+  justify-content: center;
+}
+.footer-sl-icon {
+  width: 24px;
+  height: 24px;
+}
+.footer-sl-link {
+  fill: var(--light-text);
+  transition: fill var(--timing-function) var(--animation-duration);
+}
+.footer-sl-link:hover,
+.footer-sl-link:focus {
+  fill: var(--brand-color-pink);
+}
+/* -----------------------------------------------------THRIVE/CARD-MOBILE----------------------------------------------------------- */
+.thrive,
+.card {
+  padding: 36px 10px;
+}
+.thrive-title,
+.card-title {
+  font-size: 24px;
+  line-height: 1.07;
+  margin-bottom: 16px;
+}
+.thrive-text,
+.card-text {
+  font-size: 16px;
+  line-height: 1.2;
+}
+.thrive-text:not(:last-child) {
+  margin-bottom: 24px;
+}
+.card-subtitle {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+.card-list-item {
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.card-list-item:last-child {
+  margin-bottom: 0px;
+}
 /* -----------------------------------------------------HEADER-TABLET----------------------------------------------------------- */
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
-}
-/* -----------------------------------------------------HEADER-PC---------------------------------------------------------- */
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1158px;
-  }
   .tagline-box {
-    background-color: var(--brand-color-blue);
-    width: 100%;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    display: block;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
+  }
+  .mobile-menu-open {
+    display: none;
   }
   .navigation-list {
     display: flex;
@@ -540,12 +629,116 @@ body {
   .navigation-link:focus {
     transform: scale(1.25);
   }
-  /* -----------------------------------------------------HERO------------------------------------------------------------ */
+  .mobile-menu {
+    display: none;
+  }
+  /* -----------------------------------------------------HERO-TABLET----------------------------------------------------------- */
   .hero {
     display: flex;
-    gap: 138px;
+    gap: 16px;
     justify-content: center;
     align-items: flex-start;
+  }
+  .hero-text-box {
+    width: 360px;
+  }
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .form-input {
+    width: 240px;
+  }
+  .hero-img {
+    display: block;
+    margin-top: 30px;
+    width: 360px;
+  }
+  /* -----------------------------------------------------ADVANTAGES-TABLET----------------------------------------------------------- */
+  .advantages,
+  .app {
+    padding: 36px 10px;
+  }
+  .advantages-box {
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .advantages-subtitle {
+    margin-top: 86px;
+  }
+  .advantages-text {
+    margin-top: 36px;
+  }
+  .advantages-img {
+    margin: 0;
+  }
+  /* -----------------------------------------------------STEPS-TABLET----------------------------------------------------------- */
+  .first-step-box,
+  .second-step-box {
+    padding: 36px 36px;
+  }
+  .last-box {
+    display: flex;
+    gap: 16px;
+  }
+  .last-box .step-text-box {
+    margin-top: 48px;
+  }
+  .account-img {
+    margin: 0;
+  }
+  /* -----------------------------------------------------APP-TABLET---------------------------------------------------------- */
+  .app-box {
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+  }
+  .applications-box {
+    gap: 28px;
+  }
+  .app-img {
+    width: 360px;
+    margin: 0;
+  }
+  /* -----------------------------------------------------FEEDBACK-TABLET----------------------------------------------------------- */
+  .feedback-item {
+    width: 724px;
+    height: 150px;
+  }
+  .feedback-text-box {
+    width: 710px;
+  }
+  /* -----------------------------------------------------CONTACTS-TABLET----------------------------------------------------------- */
+  .conclusion-img {
+    display: block;
+    width: 360px;
+  }
+  .contacts-box {
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+  }
+  .contacts-subtitle {
+    margin-top: 48px;
+  }
+}
+/* -----------------------------------------------------HEADER-PC---------------------------------------------------------- */
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1158px;
+  }
+  .tagline-box {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    font-size: 20px;
+  }
+  /* -----------------------------------------------------HERO------------------------------------------------------------ */
+  .hero {
+    gap: 138px;
     padding-bottom: 58px;
     padding-top: 58px;
   }
@@ -554,96 +747,48 @@ body {
   }
   .hero-title {
     font-size: 80px;
-    line-height: 1.1;
     margin-bottom: 38px;
   }
   .hero-subtitle {
-    font-size: 20px;
-    line-height: 1.5;
     margin-bottom: 46px;
   }
   .form-email {
-    display: flex;
     margin-bottom: 46px;
   }
   .form-input {
-    border-radius: 50px 0px 0px 50px;
-    border: 1px solid var(--brand-color-blue);
-    border: 2p;
-    width: 281px;
-    height: 60px;
-    font-size: 20px;
-    line-height: 1.5;
-    padding: 15px;
+    width: 280px;
   }
   .form-button {
-    border-radius: 0px 50px 50px 0px;
-    background-color: var(--dark-background);
     width: 110px;
-    height: 60px;
-    color: var(--light-text);
-    transition: background-color var(--timing-function)
-        var(--animation-duration),
-      color var(--timing-function) var(--animation-duration);
-  }
-  .form-button:hover,
-  .form-button:focus {
-    background-color: var(--brand-color-blue);
-    color: var(--main-text);
   }
   .hero-text {
-    width: 278px;
-    font-size: 18px;
-    line-height: 1.22;
     padding-bottom: 38px;
-    padding-left: 16px;
-    padding-right: 16px;
-    text-align: center;
-  }
-  .swiper-scrollbar {
-    background-color: var(--brand-color-pink);
-    opacity: 1;
-  }
-  .swiper-scrollbar-drag {
-    background-color: var(--dark-background);
-    opacity: 1;
   }
   .hero-note {
     margin-top: 38px;
     font-size: 13px;
-    line-height: 1.22;
   }
   .hero-img {
-    margin-top: 30px;
+    width: 464px;
   }
   /* -----------------------------------------------------ADVANTAGES------------------------------------------------------------ */
   .advantages,
   .app {
-    background-color: var(--dark-background);
     padding: 64px 22px;
   }
   .advantages-box {
-    display: flex;
     gap: 122px;
-    justify-content: center;
   }
   .advantages-text-box {
-    color: var(--light-text);
-    text-align: center;
-    margin-right: 58px;
     background-image: url(../images/circle.png);
     background-repeat: no-repeat;
     background-position: 50% 75%;
   }
   .advantages-subtitle {
-    font-size: 20px;
-    line-height: 1.4;
-    text-transform: uppercase;
     margin-top: 78px;
   }
   .advantages-text {
     font-size: 56px;
-    line-height: 1.14;
     margin-top: 102px;
     width: 600px;
   }
@@ -652,17 +797,8 @@ body {
   .second-step {
     padding: 58px 120px;
   }
-  .step-title {
-    font-size: 19px;
-    line-height: 1.4;
-    text-transform: uppercase;
-    text-align: center;
-  }
   .step-subtitle {
-    margin-top: 30px;
     font-size: 55px;
-    line-height: 1.2;
-    text-align: center;
   }
   .first-step-box,
   .second-step-box {
@@ -670,229 +806,132 @@ body {
     display: flex;
     gap: 48px;
     width: 960px;
-    border-radius: 12px;
-    margin-right: auto;
-    margin-left: auto;
   }
   .first-step-box {
-    background-color: var(--brand-color-pink);
     padding: 96px 78px 0 78px;
   }
   .second-step-box {
-    background-color: var(--brand-color-blue);
     padding: 56px 42px 76px 42px;
   }
   .last-box {
     padding: 36px 42px;
+    gap: 48px;
   }
   .step-text-subtitle {
     font-size: 20px;
-    line-height: 1.4;
-    text-transform: uppercase;
     margin-bottom: 30px;
   }
   .step-text-title {
     font-size: 45px;
-    line-height: 1.07;
     margin-bottom: 40px;
   }
   .step-text-list {
     font-size: 20px;
-    line-height: 2;
-    display: flex;
-    flex-direction: column;
     gap: 40px;
   }
-  .step-text-item {
-    min-height: 40px;
-    padding-left: 60px;
-    background-image: url(../images/tick.png);
-    background-repeat: no-repeat;
-  }
   .step-text-note {
+    display: block;
     font-size: 10px;
     line-height: 1.6;
   }
   .phone-img {
+    display: block;
     position: relative;
     top: 20px;
   }
   .phone-img-2 {
+    display: block;
     position: relative;
     top: 48px;
   }
+  .card-img {
+    display: block;
+  }
   .step-button {
     margin-top: 40px;
-    padding: 15px 35px;
-    background-color: var(--dark-background);
-    color: var(--light-text);
-    border-radius: 50px;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    text-transform: uppercase;
-    transition: background-color var(--timing-function)
-        var(--animation-duration),
-      color var(--timing-function) var(--animation-duration);
-  }
-  .step-button:hover,
-  .step-button:focus {
-    background-color: var(--main-background);
-    color: var(--main-text);
   }
   .account-text {
     font-size: 20px;
     line-height: 1.6;
   }
+  .last-box .step-text-box {
+    margin-top: 0;
+  }
   /* -----------------------------------------------------APP----------------------------------------------------------- */
   .app-box {
-    display: flex;
     gap: 168px;
-    justify-content: center;
-  }
-  .app-text-box {
-    margin-top: 16px;
-    color: var(--light-text);
-    text-align: center;
   }
   .app-item {
-    margin-bottom: 50px;
+    margin-bottom: 36px;
   }
   .app-subtitle {
-    font-size: 14px;
-    line-height: 1.4;
-    margin-bottom: 8px;
-    text-transform: uppercase;
-  }
-  .app-text {
-    font-size: 12px;
-    line-height: 1.5;
+    font-size: 24px;
   }
   .applications-box {
-    display: flex;
     gap: 40px;
   }
   .applications-box-item {
-    background-color: var(--main-background);
     width: 160px;
-    color: var(--main-text);
-    padding: 20px 32px 30px 32px;
-    border-radius: 12px;
-    transition: transform var(--timing-function) var(--animation-duration);
   }
-  .applications-box-item:hover,
-  .applications-box-item:focus {
-    transform: scale(1.25);
-  }
-  .application-image {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 8px;
-  }
-  .rate {
-    font-size: 35px;
-    line-height: 1.1;
-  }
-  .reviews {
-    font-size: 12px;
-    line-height: 1.5;
-    color: #808080;
-    margin-bottom: 0.8;
+  .app-img {
+    width: 445px;
   }
   /* -----------------------------------------------------FEEDBACK------------------------------------------------------------ */
   .feedback {
     padding: 58px 44px;
   }
   .feedback-subtitle {
-    font-weight: 400;
     font-size: 56px;
-    line-height: 0.86;
-    text-align: center;
     margin-bottom: 88px;
   }
   .feedback-item {
-    position: relative;
-    width: 350px;
-    height: 456px;
-    background-color: #efefef;
-    border-radius: 12px;
-    text-align: center;
+    width: 1100px;
+    height: 250px;
   }
   .feedback-text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 265px;
+    width: 1000px;
   }
   .feedback-text {
     font-size: 28px;
-    line-height: 1.14;
     margin-bottom: 32px;
   }
   .feedback-name {
     font-size: 16px;
-    line-height: 1.5;
-  }
-  .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    text-align: center;
-    opacity: 1;
-    background-color: var(--brand-color-blue);
-  }
-  .swiper-pagination-bullet-active {
-    background-color: var(--dark-background);
   }
   /* -----------------------------------------------------CONTACTS------------------------------------------------------------ */
   .contacts {
-    background-color: var(--brand-color-pink);
     padding: 58px 44px;
-    text-align: center;
+  }
+  .conclusion-img {
+    width: 468px;
   }
   .contacts-box {
-    display: flex;
     gap: 170px;
-    justify-content: center;
   }
   .contacts-subtitle {
     font-size: 56px;
-    line-height: 1.14;
     width: 328px;
     margin-bottom: 32px;
-  }
-  .contacts-address {
-    font-style: normal;
+    margin-top: 0;
   }
   .contacts-address-subtitle {
     font-size: 28px;
-    line-height: 1.14;
-    margin-bottom: 16px;
   }
   .contacts-address-button {
     font-size: 24px;
     line-height: 1.6;
-    margin-bottom: 16px;
-    background-color: var(--main-background);
-    border-radius: 50%;
     padding: 20px;
-    transition: color var(--timing-function) var(--animation-duration),
-      background-color var(--timing-function) var(--animation-duration);
-  }
-  .contacts-address-button:hover,
-  .contacts-address-button:focus {
-    background-color: var(--dark-background);
-    color: var(--light-text);
   }
   .contacts-text {
     font-size: 20px;
     line-height: 1.6;
   }
+  /* -----------------------------------------------------FOOTER-MOBILE---------------------------------------------------------- */
+
   /* -----------------------------------------------------FOOTER----------------------------------------------------------- */
   .footer {
-    background-color: var(--dark-background);
     padding: 58px 44px;
-    color: var(--light-text);
+    text-align: start;
   }
   .footer-box {
     display: flex;
@@ -901,48 +940,21 @@ body {
   }
   .footer-note {
     width: 254px;
-    font-size: 12px;
-    line-height: 1.5;
-    color: #b3b3b3;
+    margin: 0;
   }
   .footer-links {
-    font-size: 16px;
-    line-height: 1.5;
     margin-top: auto;
     margin-bottom: auto;
   }
   .footer-navigation-list {
-    display: flex;
     gap: 52px;
-    justify-content: center;
-    margin-bottom: 36px;
-  }
-  .footer-navigation-link {
-    transition: color var(--timing-function) var(--animation-duration);
-  }
-  .footer-navigation-link:hover,
-  .footer-navigation-link:focus {
-    color: var(--brand-color-blue);
+    flex-wrap: nowrap;
   }
   .footer-sl-list {
-    display: flex;
     gap: 52px;
-    justify-content: center;
   }
-  .footer-sl-icon {
-    width: 24px;
-    height: 24px;
+  /* -----------------------------------------------------THRIVE/CARD-MOBILE----------------------------------------------------------- */
 
-    margin-right: 8px;
-  }
-  .footer-sl-link {
-    fill: var(--light-text);
-    transition: fill var(--timing-function) var(--animation-duration);
-  }
-  .footer-sl-link:hover,
-  .footer-sl-link:focus {
-    fill: var(--brand-color-pink);
-  }
   /* -----------------------------------------------------THRIVE/CARD------------------------------------------------------------ */
   .thrive,
   .card {
@@ -951,30 +963,19 @@ body {
   .thrive-title,
   .card-title {
     font-size: 45px;
-    line-height: 1.07;
     margin-bottom: 36px;
   }
   .thrive-text,
   .card-text {
     font-size: 20px;
-    line-height: 1.2;
   }
   .thrive-text:not(:last-child) {
     margin-bottom: 40px;
   }
   .card-subtitle {
     font-size: 24px;
-    line-height: 1.6;
-    margin-bottom: 16px;
-    margin-top: 16px;
   }
   .card-list-item {
     font-size: 20px;
-    line-height: 1.2;
-    margin-bottom: 8px;
-  }
-  .card-list-item:last-child {
-    margin-bottom: 0px;
   }
 }
-/* -----------------------------------------------------HEADER------------------------------------------------------------ */
