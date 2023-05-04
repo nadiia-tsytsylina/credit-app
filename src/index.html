@@ -105,7 +105,7 @@
 
     <main>
       <section class="hero container" id="about">
-        <div class="hero-text-box">
+        <div class="hero-text-box wow animate__animated animate__fadeInLeft">
           <h1 class="hero-title">Your journey to better credit starts here</h1>
           <p class="hero-subtitle">
             Think the credit system is stacked against you? So do we. We'll help
@@ -130,7 +130,7 @@
           </p>
         </div>
         <img
-          class="hero-img"
+          class="hero-img wow animate__animated animate__fadeIn"
           srcset="./images/hero.jpg 1x, ./images/hero@2x.jpg 2x"
           src="./images/hero.jpg"
           alt="Girl with a phone"
@@ -143,7 +143,7 @@
           <div class="advantages-box">
             <h2 class="visually-hidden">Advantages</h2>
             <img
-              class="advantages-img"
+              class="advantages-img wow animate__animated animate__fadeInLeft"
               srcset="./images/advantages.jpg 1x, ./images/advantages@2x.jpg 2x"
               src="./images/advantages.jpg"
               alt="Money in the app"
@@ -161,7 +161,7 @@
         <h2 class="visually-hidden">Getting started</h2>
         <h3 class="step-title">Step 1</h3>
         <p class="step-subtitle">Choose your product</p>
-        <div class="first-step-box">
+        <div class="first-step-box wow animate__animated animate__fadeInUp">
           <img
             class="phone-img"
             src="./images/phone-1.png"
@@ -181,7 +181,7 @@
           </div>
         </div>
 
-        <div class="first-step-box">
+        <div class="first-step-box wow animate__animated animate__fadeInUp">
           <img
             class="phone-img-2"
             src="./images/phone-2.png"
@@ -215,14 +215,14 @@
         <h2 class="visually-hidden">Choise of card</h2>
         <h3 class="step-title">Step 2</h3>
         <p class="step-subtitle">Choose where to deposit your cash</p>
-        <div class="second-step-box">
+        <div class="second-step-box wow animate__animated animate__fadeInUp">
           <img
             class="card-img"
             src="./images/card.png"
             alt="differnt credit cards"
             width="336"
           />
-          <div class="step-text-box">
+          <div class="step-text-box ">
             <h4 class="step-text-title">Empower Card</h4>
             <p class="step-text-subtitle">
               Open a debit card account through Empower with no overdraft fees
@@ -239,7 +239,7 @@
           </div>
         </div>
 
-        <div class="second-step-box last-box">
+        <div class="second-step-box last-box wow animate__animated animate__fadeInUp">
           <img
             class="account-img"
             src="./images/account.png"
@@ -260,7 +260,7 @@
           <h2 class="visually-hidden">About the app</h2>
           <div class="app-box">
             <img
-              class="app-img"
+              class="app-img wow animate__animated animate__fadeInLeft"
               srcset="./images/app.jpg 1x, ./images/app@2x.jpg 2x"
               src="./images/app.jpg"
               alt="Man with a cash"
@@ -283,7 +283,9 @@
                 </li>
               </ul>
               <div class="applications-box">
-                <div class="applications-box-item">
+                <div class="applications-box-item wow animate__animated animate__pulse" 
+                data-wow-duration="250ms"
+                data-wow-delay="500ms">
                   <a href="https://www.apple.com/ua/app-store/" target="_blank"
                     rel="noopener noreferrer nofollow">
                     <img
@@ -296,7 +298,9 @@
                     <p class="reviews">55,000 reviews</p>
                   </a>
                 </div>
-                <div class="applications-box-item">
+                <div class="applications-box-item wow animate__animated animate__pulse"
+                data-wow-duration="250ms"
+                 data-wow-delay="800ms">
                   <a href="https://play.google.com/store/apps?hl=ru&gl=US&pli=1" target="_blank"
                     rel="noopener noreferrer nofollow">
                     <img
@@ -403,7 +407,7 @@
             </div>
             
             <img
-              class="conclusion-img"
+              class="conclusion-img wow animate__animated animate__fadeInRight"
               srcset="./images/conclusion.jpg 1x, ./images/conclusion@2x.jpg 2x"
               src="./images/conclusion.jpg"
               alt="Man with a cash"
@@ -473,6 +477,10 @@
       </div>
     </footer>
         <script src="./js/mobile-menu.js"></script>
+        <script src="./js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
     <script src="index.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </body>

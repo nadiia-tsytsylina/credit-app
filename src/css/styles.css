@@ -73,6 +73,9 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+.animate__animated.animate__fadeIn {
+  animation-duration: 2s;
+}
 /* -----------------------------------------------------HEADER-MOBILE----------------------------------------------------------- */
 .container {
   width: 100%;

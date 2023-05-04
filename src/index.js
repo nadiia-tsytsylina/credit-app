@@ -1,4 +1,5 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import 'animate.css';
 
 const form = document.querySelector('.form-email');
 const input = document.querySelector('.form-input');
