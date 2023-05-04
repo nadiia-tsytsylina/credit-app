@@ -189,6 +189,7 @@ body {
 .hero {
   padding-bottom: 36px;
   padding-top: 36px;
+  text-align: center;
 }
 .hero-title {
   font-size: 36px;
@@ -203,6 +204,7 @@ body {
 .form-email {
   display: flex;
   margin-bottom: 32px;
+  justify-content: center;
 }
 .form-input {
   border-radius: 50px 0px 0px 50px;
@@ -638,6 +640,7 @@ body {
     gap: 16px;
     justify-content: center;
     align-items: flex-start;
+    text-align: start;
   }
   .hero-text-box {
     width: 360px;
@@ -645,7 +648,9 @@ body {
   .hero-title {
     font-size: 48px;
   }
-
+  .form-email {
+    justify-content: flex-start;
+  }
   .form-input {
     width: 240px;
   }
